@@ -1,0 +1,16 @@
+server:
+  port: 9001
+
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: us-east-2
+      auto: false
+    credentials:
+      useDefaultAwsCredentialsChain: true
+      access-key: AKIAIMFWPWTYX3MMCK3Q
+      secret-key: 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
+    end-point:
+      uri: https://sqs.us-east-2.amazonaws.com/802270061567/account_create-account
