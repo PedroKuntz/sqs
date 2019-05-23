@@ -32,7 +32,7 @@ public class SQSConfig {
 
     public AmazonSQSAsync amazonSQSAsync() {
         return AmazonSQSAsyncClientBuilder.standard().withRegion(Regions.US_EAST_2)
-                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("AKIAIMFWPWTYX3MMCK3Q", "CGktDe9O1dN2bqJ43QKAGlLl6DWzvoD2tYf9fSX3")))
+                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(awsAccessKey, awsSecretKey)))
                 .build();
     }
 
